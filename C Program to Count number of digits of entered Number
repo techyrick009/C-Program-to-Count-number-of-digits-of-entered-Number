@@ -1,0 +1,46 @@
+
+/*
+ *  Author: Techyrick.com
+ */
+
+#include<stdio.h> 
+//#include 
+
+
+
+void main() {
+
+   int number,sum,temp_var;
+  
+
+//    clrscr();
+
+    printf("C Program to Number of digits for a Number Entered");
+
+    printf("\n\n Enter Number : ");
+    scanf("%i", &number);
+    
+    printf("\n\n Number : %i",number);
+     
+     
+   //Logic to calculate number of digits
+   sum = 0;
+   while(number >=1 ) {
+       
+      temp_var = number%10; //get unit place digit
+      sum = sum + 1; 
+      number = number/10; //remove the last digit
+       
+       
+   }
+
+   printf("\n\n Total Digits : %i", sum);
+    
+
+
+//	getch();
+
+
+
+
+}
